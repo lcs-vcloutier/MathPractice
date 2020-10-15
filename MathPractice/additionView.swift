@@ -10,18 +10,18 @@ import SwiftUI
 struct additionView: View {
 @State private var input = ""
 @State private var score = 1
-
-let operator1 = Int.random(in: 0..<4)
 let number1 = Int.random(in: 0..<12)
 let number2 = Int.random(in: 0..<12)
-switch operator1 {
-        case 0: question = "\(number1) + \(number2)" //set answer too
-        case 1: question = "\(number1) - \(number2)"
-        case 2: question = "\(number1) / \(number2)"
-        case 3: question = "\(number1) * \(number2)"
-    }
+switch Int.random(in: 0..<4) {
+            case 0: question = "\(number1) + \(number2)" //set answer too
+            case 1: question = "\(number1) - \(number2)"
+            case 2: question = "\(number1) / \(number2)"
+            case 3: question = "\(number1) * \(number2)"
+            default: question = "ERROR"
+        }
     
     var body: some View {
+        
         VStack{
         Text("Score:\(score)")
             Text(question)
