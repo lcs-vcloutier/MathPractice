@@ -11,10 +11,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("+")
-                Text("-")
-                Text("*")
-                Text("/")
+                NavigationLink("+", destination: additionView())
+                NavigationLink("+", destination: additionView())
+                NavigationLink("+", destination: additionView())
+                NavigationLink("+", destination: additionView())
             }
             .navigationBarTitle(Text("Math Practice"))
         }
