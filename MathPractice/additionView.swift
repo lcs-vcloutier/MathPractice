@@ -10,18 +10,21 @@ import SwiftUI
 struct additionView: View {
 @State private var input = ""
 @State private var score = 1
-let operations = ["+","-","*","/"]
-let number1 = [1,2,3,4,5,6,7,8,9,10,11,12]
-let number2 = [1,2,3,4,5,6,7,8,9,10,11,12]
-let equation = "\(number1.shuffled())\(operations.shuffled()) \(number2.shuffled())"
 
-let answer = 0
-
+let operator1 = Int.random(in: 0..<4)
+let number1 = Int.random(in: 0..<12)
+let number2 = Int.random(in: 0..<12)
+switch operator1 {
+        case 0: question = "\(number1) + \(number2)" //set answer too
+        case 1: question = "\(number1) - \(number2)"
+        case 2: question = "\(number1) / \(number2)"
+        case 3: question = "\(number1) * \(number2)"
+    }
     
     var body: some View {
         VStack{
         Text("Score:\(score)")
-        Text(equation)
+            Text(question)
         TextField("Input", text: $input).keyboardType(.decimalPad)
         //button this matters
         }
@@ -33,3 +36,4 @@ struct additionView_Previews: PreviewProvider {
         additionView()
     }
 }
+
