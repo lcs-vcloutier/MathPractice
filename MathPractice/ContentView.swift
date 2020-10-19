@@ -84,13 +84,25 @@ struct ContentView: View {
             number2 = Int.random(in: 0..<12)
             operatorNumber = Int.random(in: 0..<4)
         }
-        else if score >= 0 && answer != intInput{
+        else if score > 0 && answer != intInput{
             // Punish users for wrong answers
             score -= 1
             // Make a new equation
             number1 = Int.random(in: 0..<12)
             number2 = Int.random(in: 0..<12)
             operatorNumber = Int.random(in: 0..<4)
+        }
+        else if score == 0 && answer != intInput{
+            // Make a new equation
+            number1 = Int.random(in: 0..<12)
+            number2 = Int.random(in: 0..<12)
+            operatorNumber = Int.random(in: 0..<4)
+        }
+        else {
+            // Make a new equation
+            number1 = 0
+            number2 = 0
+            operatorNumber = 0
         }
     }
 }

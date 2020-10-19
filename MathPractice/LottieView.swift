@@ -38,6 +38,6 @@ struct LottieView: UIViewRepresentable {
 }
 struct LottieView_Previews: PreviewProvider {
     static var previews: some View {
-        LottieView(animationNamed: "correct")
+        LottieView(animationNamed: "291")
     }
 }
