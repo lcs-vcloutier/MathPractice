@@ -14,30 +14,51 @@ struct ContentView: View {
     @State private var number2 = Int.random(in: 0..<12)
     @State private var operatorNumber = Int.random(in: 0..<4)
     @State private var answer = 0
+    @State private var sheet = false
     var body: some View {
-        NavigationView {
-            VStack{
-                // Display score
-                Text("Score: \(score)")
-                // Handle the randomized equation and set the answer
-                if operatorNumber == 0 {
-                    Text("\(number1) + \(number2)")
-                }
-                else if operatorNumber == 1 {
-                    Text("\(number1) - \(number2)")
-                }
-                else if operatorNumber == 2 {
-                    Text("\(number1) * \(number2)")
-                }
-                else if operatorNumber == 3 {
-                    Text("\(number1) / \(number2)")
-                }
-                // Input for user answer
-                TextField("Input", text: $input).keyboardType(.decimalPad)
-                Button(action: {checkAnswer()}, label: { Text("Click Me") })
+        VStack {
+            // Display the randomized equation
+            if operatorNumber == 0 {
+                Text("\(number1) + \(number2)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
             }
+            else if operatorNumber == 1 {
+                Text("\(number1) - \(number2)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+            }
+            else if operatorNumber == 2 {
+                Text("\(number1) x \(number2)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+            }
+            else if operatorNumber == 3 {
+                Text("\(number1) / \(number2)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                
+            }
+            
+            // Display score
+            Text("\(score) Points")
+                .font(.title2)
+                .fontWeight(.semibold)
+            
+            // Input for user answer
+            TextField("Input", text: $input ).frame(width: 100.0).keyboardType(.decimalPad)         .textFieldStyle(RoundedBorderTextFieldStyle())
+            
+            Button(action: {checkAnswer(); self.sheet = true}, label: { Text("Go") })
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(10)
+                .sheet(isPresented: $sheet) {
+                        //show (expenses: self.expenses)
+                    }
         }
-        .navigationBarTitle(Text("Math Practice"))
     }
     func checkAnswer() {
         // Set answer
@@ -63,7 +84,7 @@ struct ContentView: View {
             number2 = Int.random(in: 0..<12)
             operatorNumber = Int.random(in: 0..<4)
         }
-        else if score > 0 && answer != intInput{
+        else if score >= 0 && answer != intInput{
             // Punish users for wrong answers
             score -= 1
             // Make a new equation

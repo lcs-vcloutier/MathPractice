@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AE0488D253E17910015C10D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0488C253E17910015C10D /* LottieView.swift */; };
 		2AE43C65253889020082033E /* MathPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C64253889020082033E /* MathPracticeApp.swift */; };
 		2AE43C67253889020082033E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C66253889020082033E /* ContentView.swift */; };
 		2AE43C69253889070082033E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE43C68253889070082033E /* Assets.xcassets */; };
 		2AE43C6C253889070082033E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE43C6B253889070082033E /* Preview Assets.xcassets */; };
-		2AE43C7525388B210082033E /* additionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C7425388B210082033E /* additionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AE0488C253E17910015C10D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2AE43C61253889020082033E /* MathPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE43C64253889020082033E /* MathPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPracticeApp.swift; sourceTree = "<group>"; };
 		2AE43C66253889020082033E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AE43C68253889070082033E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE43C6B253889070082033E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AE43C6D253889070082033E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AE43C7425388B210082033E /* additionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				2AE43C64253889020082033E /* MathPracticeApp.swift */,
 				2AE43C66253889020082033E /* ContentView.swift */,
-				2AE43C7425388B210082033E /* additionView.swift */,
+				2AE0488C253E17910015C10D /* LottieView.swift */,
 				2AE43C68253889070082033E /* Assets.xcassets */,
 				2AE43C6D253889070082033E /* Info.plist */,
 				2AE43C6A253889070082033E /* Preview Content */,
@@ -143,7 +143,7 @@
 			files = (
 				2AE43C67253889020082033E /* ContentView.swift in Sources */,
 				2AE43C65253889020082033E /* MathPracticeApp.swift in Sources */,
-				2AE43C7525388B210082033E /* additionView.swift in Sources */,
+				2AE0488D253E17910015C10D /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +272,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"MathPractice/Preview Content\"";
 				DEVELOPMENT_TEAM = GR6SL6LH76;
 				ENABLE_PREVIEWS = YES;
@@ -294,6 +295,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"MathPractice/Preview Content\"";
 				DEVELOPMENT_TEAM = GR6SL6LH76;
 				ENABLE_PREVIEWS = YES;
