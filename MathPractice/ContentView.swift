@@ -27,7 +27,6 @@ struct ContentView: View {
                 Text("\(number1) - \(number2)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                
             }
             else if operatorNumber == 2 {
                 Text("\(number1) x \(number2)")
@@ -56,8 +55,8 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(10)
                 .sheet(isPresented: $sheet) {
-                        //show (expenses: self.expenses)
-                    }
+                    //show (expenses: self.expenses)
+                }
         }
     }
     func checkAnswer() {
@@ -112,3 +111,13 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+////Check for subtraction & fix
+////if operatorNumber == 1 && number1 <= number2 {
+////number1 = Int.random(in: 0..<12)
+////}
+////Check for division & fix
+////else if operatorNumber == 4 && number1.isMultiple(of: number2) {
+//   number1 = Int.random(in: 0..<12)
+//  number2 = Int.random(in: 0..<12)
+//}

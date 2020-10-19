@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2AE0488D253E17910015C10D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0488C253E17910015C10D /* LottieView.swift */; };
 		2AE04890253E1B210015C10D /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0488F253E1B210015C10D /* correct.json */; };
 		2AE04893253E1B250015C10D /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE04892253E1B250015C10D /* wrong.json */; };
+		2AE04899253E31C30015C10D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2AE04898253E31C30015C10D /* Lottie */; };
 		2AE43C65253889020082033E /* MathPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C64253889020082033E /* MathPracticeApp.swift */; };
 		2AE43C67253889020082033E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C66253889020082033E /* ContentView.swift */; };
 		2AE43C69253889070082033E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE43C68253889070082033E /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE04899253E31C30015C10D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = MathPractice;
+			packageProductDependencies = (
+				2AE04898253E31C30015C10D /* Lottie */,
+			);
 			productName = MathPractice;
 			productReference = 2AE43C61253889020082033E /* MathPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 2AE43C58253889020082033E;
+			packageReferences = (
+				2AE04897253E31C30015C10D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 2AE43C62253889020082033E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -192,6 +200,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -253,6 +262,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -342,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AE04897253E31C30015C10D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AE04898253E31C30015C10D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AE04897253E31C30015C10D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2AE43C59253889020082033E /* Project object */;
 }
