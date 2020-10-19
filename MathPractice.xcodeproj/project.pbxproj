@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2AE0488D253E17910015C10D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0488C253E17910015C10D /* LottieView.swift */; };
+		2AE04890253E1B210015C10D /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE0488F253E1B210015C10D /* correct.json */; };
+		2AE04893253E1B250015C10D /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = 2AE04892253E1B250015C10D /* wrong.json */; };
 		2AE43C65253889020082033E /* MathPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C64253889020082033E /* MathPracticeApp.swift */; };
 		2AE43C67253889020082033E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE43C66253889020082033E /* ContentView.swift */; };
 		2AE43C69253889070082033E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE43C68253889070082033E /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		2AE0488C253E17910015C10D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		2AE0488F253E1B210015C10D /* correct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct.json; sourceTree = "<group>"; };
+		2AE04892253E1B250015C10D /* wrong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong.json; sourceTree = "<group>"; };
 		2AE43C61253889020082033E /* MathPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE43C64253889020082033E /* MathPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathPracticeApp.swift; sourceTree = "<group>"; };
 		2AE43C66253889020082033E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 				2AE43C66253889020082033E /* ContentView.swift */,
 				2AE0488C253E17910015C10D /* LottieView.swift */,
 				2AE43C68253889070082033E /* Assets.xcassets */,
+				2AE04892253E1B250015C10D /* wrong.json */,
+				2AE0488F253E1B210015C10D /* correct.json */,
 				2AE43C6D253889070082033E /* Info.plist */,
 				2AE43C6A253889070082033E /* Preview Content */,
 			);
@@ -129,6 +135,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE04890253E1B210015C10D /* correct.json in Resources */,
+				2AE04893253E1B250015C10D /* wrong.json in Resources */,
 				2AE43C6C253889070082033E /* Preview Assets.xcassets in Resources */,
 				2AE43C69253889070082033E /* Assets.xcassets in Resources */,
 			);
