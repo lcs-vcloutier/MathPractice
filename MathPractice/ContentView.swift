@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var operatorNumber = Int.random(in: 0..<4)
     @State private var answer = 0
     @State private var sheet = false
+    @State private var animationName = ""
     var body: some View {
         VStack {
             // Display the randomized equation
@@ -55,7 +56,7 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(10)
                 .sheet(isPresented: $sheet) {
-                    //show (expenses: self.expenses)
+                    LottieView(animationNamed: animationName)
                 }
         }
     }
@@ -82,6 +83,8 @@ struct ContentView: View {
             number1 = Int.random(in: 0..<12)
             number2 = Int.random(in: 0..<12)
             operatorNumber = Int.random(in: 0..<4)
+            //Set animation so sheet can display
+            animationName = "correct"
         }
         else if score > 0 && answer != intInput{
             // Punish users for wrong answers
@@ -90,6 +93,8 @@ struct ContentView: View {
             number1 = Int.random(in: 0..<12)
             number2 = Int.random(in: 0..<12)
             operatorNumber = Int.random(in: 0..<4)
+            //Set animation so sheet can display
+            animationName = "wrong"
         }
         else if score == 0 && answer != intInput{
             // Make a new equation
